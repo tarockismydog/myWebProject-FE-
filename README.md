@@ -51,20 +51,6 @@ npm start
 ./gradlew bootRun
 ```
 
----
-
- 💡 트러블 슈팅
-
- 🔥 문제
-
-* Git 인증 오류 발생 (push 실패)
-
- ✅ 해결
-
-* GitHub 정책 변경으로 비밀번호 인증 불가
-* Personal Access Token으로 해결
-
----
 
  ✍️ 느낀점
 

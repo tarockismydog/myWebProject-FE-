@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+ 🛒 React + Spring Boot 쇼핑몰 프로젝트
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ 📌 프로젝트 소개
 
-Currently, two official plugins are available:
+React와 Spring Boot를 활용한 CRUD 기반 웹 애플리케이션입니다.
+사용자 인증부터 상품 관리까지 전체적인 흐름을 구현했습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+ 🧩 주요 기능
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ 🔐 인증
 
-## Expanding the ESLint configuration
+* JWT 기반 로그인 / 로그아웃
+* 인증 필터 구현
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ 📦 상품 관리
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* 상품 등록 / 조회 / 수정 / 삭제
+* REST API 설계
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+ 📊 상태 관리
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* Zustand를 활용한 전역 상태 관리
+
+---
+
+ 🛠 기술 스택
+
+| 구분       | 기술                          |
+| -------- | --------------------------- |
+| Frontend | React, Zustand, React Query |
+| Backend  | Spring Boot, JPA            |
+| DB       | MySQL                       |
+| 기타       | Git, REST API               |
+
+---
+
+ ⚙️ 실행 방법
+
+ Frontend
+
+```bash
+npm install
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+ Backend
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+./gradlew bootRun
 ```
+
+---
+
+ 💡 트러블 슈팅
+
+ 🔥 문제
+
+* Git 인증 오류 발생 (push 실패)
+
+ ✅ 해결
+
+* GitHub 정책 변경으로 비밀번호 인증 불가
+* Personal Access Token으로 해결
+
+---
+
+ ✍️ 느낀점
+
+* 프론트와 백엔드를 함께 개발하며 전체 흐름을 이해할 수 있었습니다.
+* 상태관리(Zustand)를 활용해 복잡한 상태를 효율적으로 관리할 수 있었습니다.
+* 인증 및 보안 처리의 중요성을 체감했습니다.
+
+---
+
+ 📸 화면
+
+<img width="1898" height="904" alt="스크린샷 2026-04-14 165733" src="https://github.com/user-attachments/assets/0a67e54e-ca55-43d6-8ad1-6cf53fe388ff" />
+
+
+---
+
+ 📌 개선 예정
+
+* 결제 기능 추가
+* UI/UX 개선
+* 테스트 코드 작성

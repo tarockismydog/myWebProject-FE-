@@ -76,7 +76,10 @@ npm start
 
  📸 화면
 
-<img width="1898" height="904" alt="스크린샷 2026-04-14 165733" src="https://github.com/user-attachments/assets/0a67e54e-ca55-43d6-8ad1-6cf53fe388ff" />
+<img width="1898" height="904" alt="스크린샷 2026-04-14 165733" src="https://github.com/user-attachments/assets/0a67e54e-ca55-43d6-8ad1-6cf53fe388ff" /><img width="1912" height="907" alt="스크린샷 2026-04-14 165944" src="https://github.com/user-attachments/assets/702315c8-1fc6-4644-a239-554edc7e63a4" />
+<img width="1916" height="906" alt="스크린샷 2026-04-14 165924" src="https://github.com/user-attachments/assets/0de801f6-d7f4-4b2f-9772-25caa3d39775" />
+<img width="1917" height="905" alt="스크린샷 2026-04-14 165808" src="https://github.com/user-attachments/assets/16b291b8-3f06-4df4-b139-aae06a7b1bb5" />
+
 
 
 ---
